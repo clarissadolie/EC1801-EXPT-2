@@ -7,7 +7,7 @@ To design, implement, and verify the functionality of basic AND, OR, and NOT log
 •	Synopsys DVE
 •	Linux Terminal
 •	Verilog HDL
-# Boolean Function
+# Boolean Functionsxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdssss
 The basic logic gates realize the following Boolean functions:
 
 •	AND: Y_AND = A . B
@@ -21,8 +21,40 @@ File name	Purpose
 logic_gates.v	Logic-gate RTL
 logic_gates_tb.v	All input combinations and VCD generation
  # Verilog  Program
+// gedit basic_gates.v
+
+module basic_gates (
+    input  wire a,
+    input  wire b,
+    output wire y_and,
+    output wire y_or,
+    output wire y_not
+);
+
+    assign y_and = a & b;   // AND gate
+    assign y_or  = a | b;   // OR gate
+    assign y_not = ~a;      // NOT gate (inverter)
+
+endmodule
+
 
 # **Test Bench Program**
+// gedit basic_gates.v
+
+module basic_gates (
+    input  wire a,
+    input  wire b,
+    output wire y_and,
+    output wire y_or,
+    output wire y_not
+);
+
+    assign y_and = a & b;   // AND gate
+    assign y_or  = a | b;   // OR gate
+    assign y_not = ~a;      // NOT gate (inverter)
+
+endmodule
+
 
 
 
@@ -78,6 +110,7 @@ Y_NOT = A'
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected truth table.
 Output
 # OUTPUT
+<img width="1600" height="848" alt="WhatsApp Image 2026-11-24 at 6 25 43 PM" src="https://github.com/user-attachments/assets/98acaa5d-a0e7-4b82-9b64-e6b6ba949196" />
 
 
  
